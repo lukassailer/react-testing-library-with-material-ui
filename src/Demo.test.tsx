@@ -1,8 +1,6 @@
 import * as React from "react";
-import { render, cleanup } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import Demo from "./Demo";
-
-afterEach(cleanup);
 
 //It is best to query by something the User can see
 //For a List of Querys see:
@@ -65,7 +63,7 @@ test("Radio Group", () => {
 });
 
 //Note that the Input has the Value and the Button is being clicked
-test("Select", async () => {
+test("Select", () => {
   const {
     getSelectInput,
     getSelectButton,
